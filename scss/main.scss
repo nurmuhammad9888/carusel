@@ -1,0 +1,68 @@
+@import "../bootstrap/scss/bootstrap.scss";
+.carousel-item{
+    height: 35rem;
+}
+.carousel-caption{
+    bottom: 20%;
+    & h5{
+        font-size: calc(1.375rem + 1.5vw);
+        color: #fff;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    & p{
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        color: #fff;
+    }
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+}
+.carousel-item{
+    background: rgb(119, 119, 119);
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: #fff;
+}
+.carousel-dark .carousel-control-prev-icon, .carousel-dark .carousel-control-next-icon{
+    filter: invert(0) grayscale(0);
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 2px #fff;
+}
+.btn-secundry{
+    background: rgb(119, 119, 119);
+    color: #fff;
+}
+.margin-card-top{
+    margin-top: 4rem;
+}
+.card-title{
+    font-size: 50px;
+    letter-spacing: -.05rem;
+    line-height: 1;
+    color: #6c757d;
+}
+.featurette-divider{
+    margin: 5rem 0;
+}
+.card-text{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+@media only screen and (max-width:640px){
+    .card-title{
+        font-size: 26px;
+    }
+}
